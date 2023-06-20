@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {{>headers}}
+</head>
+
+<body>
+  {{>navbar}}
+
+  <div class="container register mt-md-5 ">
+    <div class="row pt-md-5 p-3  ">
+       <div class="col-md-4 text-center p-5 form-text ">
+    <h1>Welcome</h1>
+    <img src="" alt="">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, sapiente.</p>
+    </div>
+      <div class="col-md-8">
+      <form action="/register" class="row g-3" method="post" >
+      <h1 class="text-center">student registration form</h1>
+        <div class="col-md-6">
+          <input type="text" class="form-control" name="firstname" placeholder="First name">
+        </div>
+        <div class="col-md-6">
+          <input type="text" class="form-control" name="lastname" placeholder="Last name">
+        </div>
+        <div class="col-md-6">
+          <input type="email" class="form-control"  name="email" placeholder="Email">
+        </div>
+        <div class="col-6">
+          <input class="form-check-input" type="radio" name="gender" value="male"> : Male
+          <input class="form-check-input" type="radio" name="gender" value="fmale"> : Female
+        </div>
+        <div class="col-md-6">
+          <input type="number" class="form-control" name="phone" placeholder="Phone">
+        </div>
+        <div class="col-md-6">
+          <input type="number" class="form-control"  name="age" placeholder="Age">
+        </div>
+        <div class="col-md-6">
+          <input type="password" class="form-control"  name="password" placeholder="enter password">
+        </div>
+
+        <div class="col-md-6">
+          <input type="text" class="form-control"  name="confirmpassword" placeholder="Confirm password">
+        </div>
+
+        <div class="col-md-4">
+          {{!-- <label for="inputState" class="form-label">State</label> --}}
+          <select aria-placeholder="select" id="inputState" class="form-select">
+            <option selected>choose city...</option>
+            <option>pusad</option>
+            <option>pune</option>
+            <option>mumbai</option>
+          </select>
+        </div>
+   <div class="col-md-12 text-center ">
+      <button type="submit" class="btn btn-primary" value="Register">Sign in</button>
+    </div>
+    </div>
+      <div class="">
+        <h5>this page is in progress <span></span> go to the static web page</h5>
+        <a href="http://localhost:1210/?#">   go to weather app</a>
+    </div>
+    
+    </form>
+   
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
